@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS table</title>
+    <style>
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .but {
+        position: absolute;
+        margin: 0;
+        top: 95%;
+        left: 91%;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        background-color: #008cba;
+        color: white;
+        cursor: pointer;
+      }
+      body {
+        background-image: url("/HTML-workout/bgimg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        height: 100%;
+      }
+      .text {
+        color: whitesmoke;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      a:link {
+        color: white;
+      }
+      a:visited {
+        color: rgb(93, 5, 188);
+      }
+      a:hover {
+        color: rgb(105, 228, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center" class="text"><b>CSS TAGS</b></h1>
+    <div class="text">
+      <table class="center" border="1">
+        <thead>
+          <tr>
+            <th>S.NO</th>
+            <th>Tag</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Button</td>
+            <td>Css button can be styled with many types</td>
+            <td><a href="cssbutton.html" target="_blank">colorbutton</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Curvedbutton</td>
+            <td>Makes a curve button</td>
+            <td>
+              <a href="curvedbutton.html" target="_blank">curvedbutton</a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Centerbutton</td>
+            <td>Makes the button to be centerized</td>
+            <td>
+              <a href="centerizedbutton.html" target="_blank"
+                >centerizedbutton</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>2d Animations</td>
+            <td>Gives a 2-dimensional animation to the screen</td>
+            <td><a href="twod.html" target="_blank">2danimation</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>3d Animations</td>
+            <td>Gives a 2-dimensional animation to the screen</td>
+            <td><a href="threed.html" target="_blank">3danimation</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Background Video</td>
+            <td>Paste a background video which has a centerized text</td>
+            <td><a href="video.html" target="_blank">bgvideo</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Audio</td>
+            <td>Plays a audio from the user's loval device</td>
+            <td><a href="audio.html" target="_blank">audio</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button class="but"><a href="index.html">Go Back to Main Page</a></button>
+  </body>
+</html>

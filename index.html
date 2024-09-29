@@ -4,146 +4,192 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>html table</title>
+    <style>
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .but {
+        position: absolute;
+        margin: 0;
+        top: 95%;
+        left: 91%;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        background-color: #008cba;
+        color: white;
+        cursor: pointer;
+      }
+      body {
+        background-image: url("/HTML-workout/bgimg.jpg");
+        top: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+      }
+      .text {
+        color: whitesmoke;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      a:link {
+        color: white;
+      }
+      a:visited {
+        color: rgb(123, 0, 255);
+      }
+      a:hover {
+        color: rgb(105, 228, 255);
+      }
+    </style>
   </head>
   <body>
-    <h1 style="text-align: center"><b>HTML TAGS</b></h1>
-    <table style="align-items: center" border="1">
-      <thead>
-        <tr>
-          <th>S.NO</th>
-          <th>Tag</th>
-          <th>Description</th>
-          <th>Example</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>header</td>
-          <td>headliner with font size 1 to 6</td>
-          <td><a href="header.html" target="_blank">h1</a></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>bold</td>
-          <td>makes the font bold</td>
-          <td><a href="bold.html" target="_blank">b</a></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>italic</td>
-          <td>makes the font italic</td>
-          <td><a href="italic.html" target="_blank">italic</a></td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>underline</td>
-          <td>underlines the text</td>
-          <td><a href="underline.html" target="_blank">underline</a></td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>ordered list</td>
-          <td>
-            creates a list with a numerical order of 123 or roman numerals
-          </td>
-          <td><a href="ol.html" target="_blank">ol</a></td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>unordered list</td>
-          <td>creates a unordered list with shapes like circle, square, etc</td>
-          <td><a href="ul.html" target="_blank">ul</a></td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>anchor</td>
-          <td>
-            creates a link to link a webpage in the html or link to a subpage
-            created by the user
-          </td>
-          <td><a href="a.html" target="_blank">a</a></td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>age tagim</td>
-          <td>embed a image copied from web or ember a local image</td>
-          <td><a href="img.html" target="_blank">img</a></td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>division</td>
-          <td>creates a specific division to segregate the contents</td>
-          <td><a href="div.html" target="_blank">div</a></td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>table</td>
-          <td>creates a table to include the header and body contents</td>
-          <td><a href="table.html" target="_blank">table</a></td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>caption</td>
-          <td>creates a specific caption for a given table</td>
-          <td><a href="caption.html" target="_blank">caption</a></td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td>button</td>
-          <td>created a button for the user to submit a form</td>
-          <td><a href="button.html" target="_blank">button</a></td>
-        </tr>
-        <tr>
-          <td>13</td>
-          <td>figure caption</td>
-          <td>creates a caption that can be used for a figure</td>
-          <td><a href="figcaption.html" target="_blank">figcaption</a></td>
-        </tr>
-        <tr>
-          <td>14</td>
-          <td>form</td>
-          <td>
-            used to create a form that can be used by the owner to get user data
-          </td>
-          <td><a href="form.html" target="_blank">form</a></td>
-        </tr>
-        <tr>
-          <td>15</td>
-          <td>break</td>
-          <td>
-            breaks the line and send the next information to the next line
-          </td>
-          <td><a href="break.html" target="_blank">break</a></td>
-        </tr>
-        <tr>
-          <td>16</td>
-          <td>navigation</td>
-          <td>
-            used to represent a section with navigation link or group a section
-            with links
-          </td>
-          <td><a href="nav.html" target="_blank">nav</a></td>
-        </tr>
-        <tr>
-          <td>17</td>
-          <td>input</td>
-          <td>
-            most used tag in form to define the type of input used in form which
-            varies from radiobutton,checkbox,etc
-          </td>
-          <td><a href="input.html" target="_blank">input</a></td>
-        </tr>
-        <tr>
-          <td>18</td>
-          <td>label</td>
-          <td>
-            label defines a label for many form elements and is useful for the
-            users
-          </td>
-          <td><a href="label.html" target="_blank">label</a></td>
-        </tr>
-      </tbody>
-    </table>
+    <h1 style="text-align: center" class="text"><b>HTML TAGS</b></h1>
+    <div class="text">
+      <table class="center" border="1">
+        <thead>
+          <tr>
+            <th>S.NO</th>
+            <th>Tag</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Header</td>
+            <td>Headliner with font size 1 to 6</td>
+            <td><a href="header.html" target="_blank">h1</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Bold</td>
+            <td>Makes the font bold</td>
+            <td><a href="bold.html" target="_blank">b</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Italic</td>
+            <td>Makes the font italic</td>
+            <td><a href="italic.html" target="_blank">italic</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Underline</td>
+            <td>Underlines the text</td>
+            <td><a href="underline.html" target="_blank">underline</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Ordered list</td>
+            <td>
+              Creates a list with a numerical order of 123 or roman numerals
+            </td>
+            <td><a href="ol.html" target="_blank">ol</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Unordered list</td>
+            <td>
+              Creates a unordered list with shapes like circle, square, etc
+            </td>
+            <td><a href="ul.html" target="_blank">ul</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Anchor</td>
+            <td>
+              Creates a link to link a webpage in the html or link to a subpage
+              created by the user
+            </td>
+            <td><a href="a.html" target="_blank">a</a></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Age tag</td>
+            <td>Embed a image copied from web or ember a local image</td>
+            <td><a href="img.html" target="_blank">img</a></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Division</td>
+            <td>Creates a specific division to segregate the contents</td>
+            <td><a href="div.html" target="_blank">div</a></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Table</td>
+            <td>Creates a table to include the header and body contents</td>
+            <td><a href="table.html" target="_blank">table</a></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Caption</td>
+            <td>Creates a specific caption for a given table</td>
+            <td><a href="caption.html" target="_blank">caption</a></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Button</td>
+            <td>Breated a button for the user to submit a form</td>
+            <td><a href="button.html" target="_blank">button</a></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Figure caption</td>
+            <td>Creates a caption that can be used for a figure</td>
+            <td><a href="figcaption.html" target="_blank">figcaption</a></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Form</td>
+            <td>
+              Used to create a form that can be used by the owner to get user
+              data
+            </td>
+            <td><a href="form.html" target="_blank">form</a></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Break</td>
+            <td>
+              Breaks the line and send the next information to the next line
+            </td>
+            <td><a href="break.html" target="_blank">break</a></td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Navigation</td>
+            <td>
+              Used to represent a section with navigation link or group a
+              section with links
+            </td>
+            <td><a href="nav.html" target="_blank">nav</a></td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Input</td>
+            <td>
+              Most used tag in form to define the type of input used in form
+              which varies from radiobutton,checkbox,etc
+            </td>
+            <td><a href="input.html" target="_blank">input</a></td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Label</td>
+            <td>
+              Label defines a label for many form elements and is useful for the
+              users
+            </td>
+            <td><a href="label.html" target="_blank">label</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button class="but"><a href="maincss.html">CSS in Next Page</a></button>
   </body>
 </html>
